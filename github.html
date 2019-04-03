@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="top_container">
+        <header>
+            <nav class="navbar navbar-default active">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.html" title="">
+                            <img src="/css/assets/images/mashup-icon.svg" class="navbar-logo-img"
+                                alt="">
+                            Jinwan's page
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/jungchu/jungchu_page.html" title="">정보처리기사</a></li>
+                            <li><a href="/data_clustering/dc_page.html" title="">빅데이터 분석</a></li>
+                            <li><a href=""></a></li>
+                            <li>
+                                <p>
+                                    <!-- <a href="/components.html" class="btn btn-default navbar-btn" title="">Components</a> -->
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Add your site or app content here -->
+        <div class="hero-full-container background-image-container white-text-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>My Blog</h1>
+                        <br>
+                        <a href="/github.html" class="btn btn-default btn-lg" title="">Github 사용법</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre>
+            ###########
+            #작업 순서!#
+            ###########
+            1. ubuntu 에서 먼저 push - 사진이나 자료가 업데이트 되기 때문에.
+            2. desktop에서 pull.
+            3. 코딩 작업.
+            4. 커밋 및 푸시
+            
+            git push 할때 
+            remote: Permission to jinan159/jinan159.github.io.git denied to tkakcy159.
+            fatal: unable to access 'https://github.com/jinan159/jinan159.github.io.git/': The requested URL returned error: 403
+            이렇게 repo와 user가 다를때 
+            윈도우의 경우 자격증명 관리자에서
+            githttps://github.com 의 정보를 수정해 주면 된다.
+            
+            
+            Github 개인 정보 등록 (맨처음에만 하면됨)
+            
+            git config --global user.name "이름"
+            git config --global user.email "깃허브 메일주소" // 매번 물어보는 귀찮음을 피하기 위해 설정.
+            
+            git config --local user.name "이름"
+            git config --local user.email "깃허브 메일주소" // 매번 물어보는 귀찮음을 피하기 위해 설정.
+            
+            mkdir ~/MyProject   // 로컬 디렉토리 만들고
+            cd ~/myproject      // 디렉토리로 들어가서
+            git init            // 깃 명령어를 사용할 수 있는 디렉토리로 만든다.
+            git status          // 현재 상태를 훑어보고
+            git add 화일명.확장자  // 깃 주목 리스트에 화일을 추가하고 or
+            git add .           // 이 명령은 현재 디렉토리의 모든 화일을 추가할 수 있다.
+            git commit -m “현재형으로 설명” // 커밋해서 스냅샷을 찍는다.
+            
+            git remote add origin https://github.com/username/myproject.git // 로컬과 원격 저장소를 연결한다.
+            git remote -v // 연결상태를 확인한다.
+            git push origin master // 깃허브로 푸시한다.
+            
+            git remote set-url origin my-url // remote origin의 url 을 변경한다.
+            
+            <a href="https://nolboo.kim/blog/2013/10/06/github-for-beginner/" target="new">참고 블로그</a>
+    </pre>
+</body>
+
+</html>
