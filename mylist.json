@@ -1,0 +1,26 @@
+
+{
+    "result" : 1,
+    "data" : [
+        {
+            "name" : "Swift IOS앱 만들기",
+            "text" : "",
+            "link" : ""
+        },
+        {
+            "name" : "Android 앱 만들기",
+            "text" : "",
+            "link" : ""
+        },
+        {
+            "name" : "python 딥러닝",
+            "text" : "인공신경망 공분",
+            "link" : ""
+        },
+        {
+            "name" : "python - web crawling",
+            "text" : "날씨, 뭐뭐 등등",
+            "link" : "https://www.naver.com"
+        }
+    ]
+}
