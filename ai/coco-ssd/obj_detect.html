@@ -37,10 +37,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="obj_detect.html">Object Detection<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/ai/coco-ssd/obj_detect.html">coco-ssd<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mylib.html">자료들</a>
+                        <a class="nav-link" href="/ai/mnist/mnist.html">mnist<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ai/mobileNet/mobileNet.html">mobileNet-image<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ai/mobileNet/mobileNet-webcam.html">mobileNet-webcam<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mylib.html">자료들</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +76,7 @@
                     </div>
                     <div class="col-6 nopad list-group-item list-group-item-action" style="border: 1px solid; text-align: center;">
                         <button type="button" id="detectBtn" onclick="dectectImage();"
-                            class="ct list-group-item list-group-item-action">detect image</button>
+                            class="ct list-group-item list-group-item-action">object detect form image</button>
                         
                         <div class="spinner-border text-danger" role="status" id="spinner" style="display: none;">
                             <span class="sr-only">Loading...</span>
@@ -95,7 +107,6 @@
                     document.getElementById('img').src = fr.result;
                 }
                 fr.readAsDataURL(files[0]);
-                console.log(document.getElementById('myfile').className);
             } else {
                 alert('파일을 다시 업로드 해주세요.');
                 location.reload();
@@ -175,27 +186,32 @@
         }
 
         function dectectImage() {
-            const img = document.getElementById('img');
-            const btn = document.getElementById('detectBtn');
-            const spinner = document.getElementById('spinner');
+            const file = document.getElementById('myfile');
+            // alert((img.files.length == 0) ? 'y' : 'n');
+            if (file.files.length == 0) {
+                alert("파일을 선택해주세요.");
+            } else {
+                const img = document.getElementById('img');
+                const btn = document.getElementById('detectBtn');
+                const spinner = document.getElementById('spinner');
 
-            btn.style="display: none;";
-            spinner.style="display: inline-block";
+                btn.style="display: none;";
+                spinner.style="display: inline-block";
 
-            // 모델 로드
-            cocoSsd.load().
-            then(model => {
-                // 이미지에서 object detection
-                model.detect(img).then(predictions => {
-                    console.log('Predictions: ', predictions);
-                    
-
-                    addImageToCanvas(img)
-                    drawBox(predictions)
-                    btn.style="display: block;";
-                    spinner.style="display: none;";
+                // 모델 로드
+                cocoSsd.load().
+                then(model => {
+                    // 이미지에서 object detection
+                    model.detect(img).then(predictions => {
+                        console.log('Predictions: ', predictions);
+                        
+                        addImageToCanvas(img)
+                        drawBox(predictions)
+                        btn.style="display: block;";
+                        spinner.style="display: none;";
+                    });
                 });
-            });
+            }
         }
 
     </script>

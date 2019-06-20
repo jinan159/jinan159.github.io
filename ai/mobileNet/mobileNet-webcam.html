@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">jwpage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/ai/coco-ssd/obj_detect.html">coco-ssd<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ai/mnist/mnist.html">mnist<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ai/mobileNet/mobileNet.html">mobileNet-image<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ai/mobileNet/mobileNet-webcam.html">mobileNet-webcam<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mylib.html">자료들</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <h1>mobileNet-webcam</h1>
+        <div class="row">
+          <div class="col-4">
+              <video autoplay playsinline muted id="webcam" width="224" height="224"></video><br>
+              <input type="button" id="classNameSet" value="설정하기"><br>
+              <button id="class-a">Add A</button>
+              <input type="text" id="className-a" name="classNames" value="classA"><br>
+              <button id="class-b">Add B</button>
+              <input type="text"  id="className-b" name="classNames" value="classB"><br>
+              <button id="class-c">Add C</button>
+              <input type="text"  id="className-c" name="classNames" value="classC"><br>
+          </div>
+          <div class="col-8">
+              <div id="console" class="alert alert-dark" role="alert"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <div class="alert alert-primary" role="alert">
+                <pre>
+                  # 사용법
+                    1. webcam 활성화.
+
+                    2. classA, classB, classC에 원하는 클래스 이름을 적고 '설정하기'를 누른다.
+                    ㄴ클래스 이름을 다 적고, 설정하기를 누른다음 Add버튼을 눌러야한다.
+                    ㄴ이를 따르지 않으면 class이름이 제대로 설정되지 않는다.
+                    
+                    3. 웹캠에 인식할 물체를 보여주고 A B C 버튼중 하나를 누른다
+                    ㄴex) 스마트폰을 A object라고 가정하고, 웹캠에 스마트폰을 보이며 Add A 버튼 최소 10회이상 클릭
+                    ㄴ 그리고 사람(본인)을 웹캠에 보이며 Add B 버튼을 10회이상 클릭
+                    3. 웹 캠에 인식하고자 하는 물체(2번에서 미리 학습한 물체)를 보인다.
+                </pre>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+  <!-- Add an image that we will use to test -->
+  
+  
+  <!-- Load index.js after the content of the page -->
+
+  <script src="mobileNet-webcam.js"></script>
+</body>
+
+</html>
