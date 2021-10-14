@@ -1,0 +1,200 @@
+# Site
+repository: jinan159/jinan159.github.io
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 김진완
+title: C# Winform & Node.js & Java Developer
+email: wlsdhks0423@naver.com
+website: https://jwkim96.tistory.com
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+# twitter_username: facespics
+github_username:  jinan159
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+facebook_username: jinwan.kim.9256
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+# linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/jinan159.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  안녕하세요! 함께 성장하고싶은 개발자 김진완 입니다.
+
+  저는 `C#` `Winform` 을 기반으로한 클라이언트 개발자로 경력을 쌓아나가고 있는 2년차 개발자입니다. 
+
+  현재는 Windows Forms 기반 솔루션 유지보수를 하고있지만, 백엔드에 관심이 많아 개인적으로 공부 중 입니다.
+
+  <!--START Github States area-->
+    <!-- Include the library. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+    <!-- Prepare a container for your calendar. -->
+    <div class="calendar" style="padding: 10px;">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+
+    <script>
+        //GitHubCalendar(".calendar", "jinan159");
+
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "jinan159", { responsive: true });
+    </script>
+  <!--END Github States area-->
+
+content:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: BNKSYSTEM
+        link: www.bnksys.co.kr/web/prIntro/solution2.do
+        link_text: 기업자금관리솔루션
+        sub_title: 솔루션 유지보수
+        caption: 2020.03 - 현재
+        quote: >
+          은행지점 방문 없이 기업 내부에서 금융업무 및 자금관리 업무를 처리하는 기능을 제공하는 솔루션
+        description: | # this will include new lines to allow paragraphs
+          skills : `C#` `Winform` `Infragistics` `MSSQL`
+          - 조회기간 공통 컴포넌트 개발
+          - 보고서 목록 관리 클래스 개발
+          - 그리드 공통 row 다중선택 기능 적용
+          - 운영자 도구 개발 \- 배포문서 자동 생성 프로그램 개발
+          - SVN 관리방식 개선제안(진행중)
+
+      - layout: left
+        title: BNKSYSTEM
+        link: www.bnksys.co.kr/web/prIntro/solution5.do
+        link_text: HR솔루션
+        sub_title: (인턴) 풀스택 개발자
+        caption: 2019.08 - 2020.02
+        quote: >
+          인사, 근태, 경비처리, 결재 등의 기능을 제공하는 HR 솔루션
+        description: | # this will include new lines to allow paragraphs
+          skills : `사내프레임워크(Spring+ExtJS)` `Oracle`
+          - 직원 개인물품 신청/관리 개발
+          - 연말정산 확인 셀프체크 개발
+          - 로그인 페이지 디자인 개편
+          - 프론트엔드 httpClient 공통 세션 만료로직 개선
+
+  - title: Side Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: blograss
+        link: blograss.vercel.app
+        # link_text: Project Website
+        additional_links:
+          - title:  jinan159/blograss
+            icon: fab fa-github
+            url: github.com/jinan159/blograss#readme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Easy to show your passion of blogging
+        description: | # this will include new lines to allow paragraphs
+          skills : `Node.js` `Jest` `Vercel` `Vercel Edge Network` `AWS API Gateway` `AWS Lambda`
+          
+          많은 개발자들이 github commit 잔디를 채우면서 자신의 꾸준한 자기계발 현황을 보여주려고 노력합니다.<br>
+          하지만, 어떤 이들은 배운것들을 블로그에 공유합니다.<br>
+          누군가는 이 글들을 보고 정보를 얻어 한칸의 commit 잔디를 채워나갑니다.<br>
+          이런 선순환에 기여하는 블로거들을 위해 blograss를 개발하게 되었습니다.<br>
+          <!--START Blograss area-->
+            <br>
+            <a href="https://jwkim96.tistory.com" target="new">
+              <img src="https://blograss.vercel.app/api?blog_type=tistory&blog_name=jwkim96&dark_mode=false&text_color=black" />
+            </a>
+          <!--END Blograss area-->
+  - title: Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 업무상 사용했던 기술
+        description: | # this will include new lines to allow paragraphs
+          ## Backend
+            - Java(Spring)
+            - Eclipse
+
+          ## Frontend
+            - C#, Sencha Extjs
+            - Visual Studio, Eclipse
+
+          ## DevOps
+            - MSSQL, Oracle
+            - SQL Server Management Studio, Dbeaver
+
+      - layout: left
+        title: 개인적으로 사용했던 기술
+        description: | # this will include new lines to allow paragraphs
+          ## Backend
+            - Java(SpringBoot), Node.js
+            - Eclipse, Visual Studio Code, IntelliJ 
+
+          ## Frontend
+            - Vue.js
+            - Visual Studio Code
+
+          ## DevOps
+            - MySQL
+            - Dbeaver
+            - AWS EC2, AWS Route53, AWS API Gateway, AWS Lambda
+            - Docker, Linux ubuntu
+
+  # - title: Education # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: left
+  #       title: Silla University
+  #       caption: 2014 - 2020
+  #       sub_title: IT학과
+  #       quote: >
+          
+  #       description: | # this will include new lines to allow paragraphs
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
