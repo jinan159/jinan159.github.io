@@ -115,7 +115,7 @@ content:
           BNK시스템에서 사내용으로 개발한 HR솔루션으로, 현재는 그룹내 다수의 계열사로부터 구축 요청을 받아 외부로 확장해 나가고 있습니다.
           `인사`, `근태`, `복지`, `결재`등의 기능과 `전자문서`를 통해 페이퍼리스 인사업무를 제공하는 솔루션 입니다.
         description: | # this will include new lines to allow paragraphs
-          skills : `Java`, `Spring`, 'Oracle`, `ExtJS`
+          skills : `Java`, `Spring`, `Oracle`, `ExtJS`
           - 로그인 페이지 리뉴얼 - "주어진 업무+α 하기 위한 노력"
           - 연말정산확인기능 - "연말정산 업무 간소화 개발"
 
