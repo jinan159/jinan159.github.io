@@ -181,7 +181,7 @@ content:
             - MySQL
             - Dbeaver
             - Vercel, AWS EC2, AWS Route53, AWS API Gateway, AWS Lambda
-            - Docker, Linux ubuntu
+            - Docker, Jenkins, Linux ubuntu
 
   # - title: Education # Title for the section
   #   layout: list # Type of content section (list/text)
