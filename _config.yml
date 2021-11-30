@@ -50,9 +50,7 @@ about_profile_image: images/jinan159.jpeg
 about_content: | # this will include new lines to allow paragraphs
   안녕하세요! 함께 성장하고싶은 개발자 김진완 입니다.
 
-  저는 `C#` `Winform` 을 기반으로한 클라이언트 개발자로 경력을 쌓아나가고 있는 2년차 개발자입니다. 
-
-  현재는 Windows Forms 기반 솔루션 유지보수를 하고있지만, 백엔드에 관심이 많아 개인적으로 공부 중 입니다.
+  저는 약 1년 7개월 간 `C#` `Winform` 을 기반으로한 클라이언트 개발자로 일했었고, 현재는 백엔드 개발자가 되기 위해 공부 중 입니다.
 
   <!--START Github States area-->
     <!-- Include the library. -->
