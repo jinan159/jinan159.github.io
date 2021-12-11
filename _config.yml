@@ -168,7 +168,7 @@ content:
         title: 개인적으로 사용했던 기술
         description: | # this will include new lines to allow paragraphs
           ## Backend
-            - Java(SpringBoot), Node.js
+            - Java(SpringBoot), JPA, Node.js
             - Eclipse, Visual Studio Code, IntelliJ 
 
           ## Frontend
