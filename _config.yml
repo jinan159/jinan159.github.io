@@ -1,208 +1,200 @@
-# Site
-repository: jinan159/jinan159.github.io
-favicon: images/favicon.ico
+# The Site Configuration
 
-# Content configuration version
-version: 2
+# Import the theme
+theme: jekyll-theme-chirpy
 
-# Personal info
-name: 김진완
-title: C# Winform & Node.js & Java Developer
-email: wlsdhks0423@naver.com
-website: https://jwkim96.tistory.com
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ''
 
-# Dark Mode (true/false/never)
-darkmode: never
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
 
-# Social links
-# twitter_username: facespics
-github_username:  jinan159
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-facebook_username: jinwan.kim.9256
-# flickr_username: jekyll
-# instagram_username: jameswgrant
-# linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
 
-# Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#   icon: fas fa-globe
-#   url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Shanghai
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
 
-# About Section
-# about_title: About Me
-about_profile_image: images/jinan159.jpeg
-about_content: | # this will include new lines to allow paragraphs
-  안녕하세요! 함께 성장하고싶은 개발자 김진완 입니다.
+title: Chirpy                          # the main title
 
-  저는 약 1년 7개월 간 `C#` `Winform` 을 기반으로한 클라이언트 개발자로 일했었고, 현재는 백엔드 개발자가 되기 위해 공부 중 입니다.
+tagline: A text-focused Jekyll theme   # it will display as the sub-title
 
-  <!--START Github States area-->
-    <!-- Include the library. -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+description: >-                        # used by seo meta and the atom feed
+  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
 
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: ''
 
-    <!-- Prepare a container for your calendar. -->
-    <div class="calendar" style="padding: 10px;">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-    </div>
+github:
+  username: github_username             # change to your github username
 
-    <script>
-        //GitHubCalendar(".calendar", "jinan159");
+twitter:
+  username: twitter_username            # change to your twitter username
 
-        // or enable responsive functionality:
-        GitHubCalendar(".calendar", "jinan159", { responsive: true });
-    </script>
-  <!--END Github States area-->
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: your_full_name
+  email: example@domain.com             # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
-content:
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: BNKSYSTEM
-        link: www.bnksys.co.kr/web/prIntro/solution2.do
-        link_text: 기업자금관리솔루션(링크)
-        sub_title: 솔루션 유지보수
-        caption: 2020.03 - 2021.11
-        quote: >
-          기업자금관리 솔루션은 법인고객(기업) 대상으로 제공하며, 누적 가입고객수 약 5천 이상의 솔루션입니다. 
-          주로 기업 회계담당자가 사용하는 솔루션으로 아래와 같은 특징이 있습니다
-        description: | # this will include new lines to allow paragraphs
-          skills : `C#` `Winform` `Infragistics` `MSSQL`
-          
-          - 부산은행, 경남은행 뱅킹 시스템과 직접 연계
-          - 타행 및 카드사, 국세청 등 스크래핑을 통한 연계
-          - 자동으로 최신 은행 거래내역, 카드내역 등 갱신(스케줄러)
-          - 고객사 ERP와 데이터 연계(송수신)
-          
-          총 5명인 유지보수 팀에서 약 1년 7개월간 경남은행 고객 기술지원 및 유지보수를 수행하였습니다.
-          팀 내부적으로나 솔루션의 기술적인 부분에서 해결해야할 과제가 많아서, 다방면으로 개선하려는 시도를 하였습니다.
-          그 중 몇가지를 아래에 기술하였습니다.
-          
-          - 배포문서 수기 작성 업무 간소화 - "팀원들이 편하게 일할 수 있는 방법을 항상 고민하는 자세"
-          - 조회기간 컴포넌트 개선 - "고객 편의성 증진을 위해 세심한 관찰과 개선"
-          - 보고서 전체 조회 메뉴 개발 - "반복되는 단순문의에서 문제의 본질을 분석하려는 자세"
-          - 그리드 다중선택 기능 개발 - "당연한 기능은 당연한 자리에"
+google_site_verification:               # fill in to your verification string
 
-      - layout: left
-        title: BNKSYSTEM
-        link: www.bnksys.co.kr/web/prIntro/solution5.do
-        link_text: HR솔루션(링크)
-        sub_title: (인턴) 풀스택 개발자
-        caption: 2019.08 - 2020.02
-        quote: >
-          BNK시스템에서 사내용으로 개발한 HR솔루션으로, 현재는 그룹내 다수의 계열사로부터 구축 요청을 받아 외부로 확장해 나가고 있습니다.
-          `인사`, `근태`, `복지`, `결재`등의 기능과 `전자문서`를 통해 페이퍼리스 인사업무를 제공하는 솔루션 입니다.
-        description: | # this will include new lines to allow paragraphs
-          skills : `Java`, `Spring`, `Oracle`, `ExtJS`
-          - 로그인 페이지 리뉴얼 - "주어진 업무+α 하기 위한 노력"
-          - 연말정산확인기능 - "연말정산 업무 간소화 개발"
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
 
-  - title: Side Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: blograss
-        link: blograss.vercel.app
-        # link_text: Project Website
-        additional_links:
-          - title:  jinan159/blograss
-            icon: fab fa-github
-            url: github.com/jinan159/blograss#readme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          Easy to show your passion of blogging
-        description: | # this will include new lines to allow paragraphs
-          skills : `Node.js` `Jest` `Vercel` `Vercel Edge Network` `AWS API Gateway` `AWS Lambda`
-          
-          많은 개발자들이 github commit 잔디를 채우면서 자신의 꾸준한 자기계발 현황을 보여주려고 노력합니다.<br>
-          하지만, 어떤 이들은 배운것들을 블로그에 공유합니다.<br>
-          누군가는 이 글들을 보고 정보를 얻어 한칸의 commit 잔디를 채워나갑니다.<br>
-          이런 선순환에 기여하는 블로거들을 위해 blograss를 개발하게 되었습니다.<br>
-          <!--START Blograss area-->
-            <br>
-            <a href="https://jwkim96.tistory.com" target="new">
-              <img src="https://blograss.vercel.app/api?blog_type=tistory&blog_name=jwkim96&dark_mode=false&text_color=black" />
-            </a>
-          <!--END Blograss area-->
-  - title: Skills # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: 업무상 사용했던 기술
-        description: | # this will include new lines to allow paragraphs
-          ## Backend
-            - Java(Spring)
-            - Eclipse
+google_analytics:
+  id:                 # fill in your Google Analytics ID
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
+    cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
-          ## Frontend
-            - C#, Sencha Extjs
-            - Visual Studio, Eclipse
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode:   # [light|dark]
 
-          ## DevOps
-            - MSSQL, Oracle
-            - SQL Server Management Studio, Dbeaver
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: 'https://demo-img.cotes.page'
 
-      - layout: left
-        title: 개인적으로 사용했던 기술
-        description: | # this will include new lines to allow paragraphs
-          ## Backend
-            - Java(SpringBoot), JPA, Node.js
-            - Eclipse, Visual Studio Code, IntelliJ 
+# the avatar on sidebar, support local or CORS resources
+avatar: '/commons/avatar.jpg'
 
-          ## Frontend
-            - Vue.js
-            - Visual Studio Code
+# boolean type, the global switch for ToC in posts.
+toc: true
 
-          ## DevOps
-            - MySQL
-            - Dbeaver
-            - Vercel, AWS EC2, AWS Route53, AWS API Gateway, AWS Lambda
-            - Docker, Jenkins, Linux ubuntu
-            - Slack, Jenkins
+comments:
+  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo:         # <gh-username>/<repo>
+    issue_term:   # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo:              # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping:           # optional, default to 'pathname'
+    input_position:    # optional, default to 'bottom'
+    lang:              # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
 
-  # - title: Education # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       title: Silla University
-  #       caption: 2014 - 2020
-  #       sub_title: IT학과
-  #       quote: >
-          
-  #       description: | # this will include new lines to allow paragraphs
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled:      # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env:          # [development|production]
 
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+pwa:
+  enabled: true   # the option for PWA feature
 
-# Build settings
-remote_theme: sproogen/resume-theme
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ''          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ''
+      type: tabs             # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
 
 sass:
-  sass_dir: _sass
   style: compressed
 
-plugins:
- - jekyll-seo-tag
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
