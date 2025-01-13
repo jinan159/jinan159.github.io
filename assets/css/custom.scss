@@ -1,0 +1,12 @@
+/* assets/css/custom.scss */
+
+/* 코드 블록의 줄바꿈 허용 */
+pre, code {
+  white-space: pre-wrap !important; /* 줄바꿈 허용 */
+  word-wrap: break-word; /* 긴 단어도 줄바꿈 */
+}
+
+/* 추가적인 코드 블록 스타일 조정 (선택 사항) */
+pre {
+  overflow: auto; /* 코드 블록이 너무 길 경우 스크롤 가능 */
+}

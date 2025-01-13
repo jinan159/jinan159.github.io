@@ -1,0 +1,9 @@
+title: "JINAN159"
+description: "한 걸음씩 걸어가는 기술블로그"
+baseurl: ""
+url: "https://jinan159.github.io"
+theme: jekyll-theme-chirpy
+sass:
+  style: compressed
+  load_paths:
+    - assets/css
